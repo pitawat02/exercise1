@@ -1,0 +1,39 @@
+import pandas as pd
+from pandas import DataFrame
+import numpy as np
+from sklearn import preprocessing
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+rawdata = pd.read_csv('watch_test2_sample.csv', parse_dates =["uts"], index_col ="uts")
+
+df = pd.DataFrame(rawdata)
+df = df.drop_duplicates()
+df = df.dropna()
+df = df.replace(0,np.nan)
+df = df.replace(np.nan,df.mean())
+#remove outlier
+Q1 = df.quantile(0.25)
+Q3 = df.quantile(0.75)
+IQR = Q3 - Q1
+
+df = df[~((df < (Q1 - 1.5 * IQR)) |(df > (Q3 + 1.5 * IQR))).any(axis=1)]
+#----------------------------
+df = df.drop(columns=['gps.y', 'gps.x'])
+df = df.resample('10S', label='right', closed='right').mean()
+df = df.interpolate(method ='time', limit_direction ='forward') 
+
+
+
+df=(df-df.min())/(df.max()-df.min())
+
+feature = list(df.columns)
+ax = plt.gca()
+for i in range(0, len(feature)):
+   df.plot(kind='line', y=feature[i], ax=ax)
+plt.show()
+
+
+
+
+df.to_csv('test4.csv')

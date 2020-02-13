@@ -1,0 +1,68 @@
+import pandas as pd
+from pandas import DataFrame
+import numpy as np
+from sklearn import preprocessing
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+from pandas.api.types import is_numeric_dtype
+import seaborn as sns; sns.set()
+
+def remove_outlier2(df):
+	low = .01
+	high = .99
+	quant_df = df.quantile([low, high])
+	for name in list(df.columns):
+	    if is_numeric_dtype(df[name]):
+	       df = df[(df[name] > quant_df.loc[low, name]) & (df[name] < quant_df.loc[high, name])]
+	return df
+
+def zeromean(df):
+    for i in list(df.columns):
+        df[i] = df[i]-df[i].mean()
+    return df
+
+rawdata = pd.read_csv('watch_test2_sample.csv', parse_dates =["uts"], index_col ="uts")
+df = pd.DataFrame(rawdata)
+df = df.drop_duplicates()
+df = df.dropna()
+df = df.replace(0,np.nan)
+df = df.replace(np.nan,df.mean())
+df = df.drop(columns=['gps.y', 'gps.x'])
+df = remove_outlier2(df)
+
+df = df.resample('20S', label='right', closed='right').mean()
+df = df.interpolate(method='time' ,limit_direction = 'forward') 
+
+df = df.drop(df.index[0:370])
+df = df.drop(df.index[245:])
+
+#df=(df-df.min())/(df.max()-df.min())
+
+
+
+
+df.to_csv('test4.csv')
+
+df = df.drop(columns=['compass','gyro.x','gyro.y','gyro.z','heartrate','light','pressure'])
+
+df = zeromean(df)
+cov = (df.T.dot(df))/(df.shape[0]-1)
+eig_vals , eig_vec = np.linalg.eig(cov) 
+
+idx = eig_vals.argsort()[::-1]   
+eig_vals = eig_vals[idx]
+eig_vec = eig_vec[:,idx]
+
+s = pd.DataFrame.from_dict(eig_vals)
+s.plot.bar()
+plt.show()
+
+
+df2 = df.dot(eig_vec)
+df2.drop(columns=2)
+
+columns = [0,1]
+arr = df2[columns].to_numpy()
+sns.heatmap(arr, cmap ='YlGn')
+
+plt.show()
