@@ -5,16 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hm3</title>
     <style>
-        .profile{
-            background-color: aquamarine;
+        header>h1{
+            text-align: center;
+            color: blue;
+            background-color: orange;
             
         }
-        * {
-            font-style: italic;
+        header>h3{
+            text-align: center;
+            color: plum;            
+        }    
+ 
+        .profile>p{
+          color: steelblue;
+        }
+        .profile>i{
+          color: deeppink;
         }
 
-
-
+        .picbox{
+        float: right;
+        width: 200px;
+        height: 200px;
+          border : 2px solid black;
+        }
+        body {
+          max-width: 750px;
+          margin: auto;
+        }
+        .main{
+          float: left;
+          width: 750px;
+          height: 200px;
+        }
+        .Introduction{
+          width: 50%;
+          height: 500px;
+          float: left;
+        }
+        .expect{
+          
+          width: 50%;
+          height: 500px;
+          float: right;
+        }
+        .quote{
+          display: table;
+          border-style: solid none;
+          width: 30%;
+          height: 180px;
+          float: right;
+        }
+        .quote>i{
+          font-size: 26px;
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+        }
+        .progress{
+          width: 50%;
+          height: 30px;
+          float: left;
+        }
+        .form{
+          width: 50%;
+          height: 154px;
+          float:left;
+        }
+        .foot{
+          margin-top: 920px;
+          background-color: orange;
+          width: 100%;
+          height: 20px;
+          text-align: center;
+        }
 
     </style>
   </head>
@@ -24,18 +88,22 @@
       <h3>The record of the CSS class</h3>
     </header>
     <div class="main">
-      <div class="profile">
-        <img
+      <div class="picbox">
+        <img class="pic"
+          width="200 px"
+          height="200 px"
           src="pic1.jpg"
-          style="max-width: 200px; border-radius: 50%;"
           alt="eieiza"
-        />Reported by
+        />
+      </div>
+      <div class="profile">
+        <p>Reported by</p>
         <p>Pitawat Chaivuutinun</p>
         <p>Tontoei</p>
         <p>ID 60010714</p>
-        <p>Feb 14,2020</p>
+        <i>Feb 14,2020</i>
       </div>
-
+    </div>
       <div class="Introduction">
         <h2>Introduction</h2>
         <p>describe your background about CSS</p>
@@ -102,9 +170,11 @@
           </fieldset>
         </form>
       </div>
+      <div class = "foot">
+
+        <p>ce.kmitl all rights reserved & copyright 2020</p>
+      </div>
     </div>
-    <footer>
-      <pre>ce.kmitl all rights reserved & copyright 2020</pre>
-    </footer>
+
   </body>
 </html>
