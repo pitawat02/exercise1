@@ -5,81 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hm3</title>
     <style>
-        header>h1{
-            text-align: center;
-            color: blue;
-            background-color: orange;
-            
-        }
-        header>h3{
-            text-align: center;
-            color: plum;            
-        }    
- 
-        .profile>p{
-          color: steelblue;
-        }
-        .profile>i{
-          color: deeppink;
-        }
+      header > h1 {
+        text-align: center;
+        color: blue;
+        background-color: orange;
+      }
+      header > h3 {
+        text-align: center;
+        color: plum;
+      }
 
-        .picbox{
+      .profile > p {
+        color: steelblue;
+      }
+      .profile > i {
+        color: deeppink;
+      }
+
+      body {
+        max-width: 750px;
+        margin: auto;
+      }
+      .main {
+        float: left;
+        width: 750px;
+      }
+      .row1 {
+        width: 100%;
+        height: 200px;
+      }
+      .row2 {
+        width: 100%;
+        height: 500px;
+      }
+      .row3 {
+        width: 100%;
+        height: 180px;
+      }
+      .profile {
+        float: left;
+        width: 546px;
+      }
+      .picbox {
         float: right;
         width: 200px;
         height: 200px;
-          border : 2px solid black;
-        }
-        body {
-          max-width: 750px;
-          margin: auto;
-        }
-        .main{
-          float: left;
-          width: 750px;
-          height: 200px;
-        }
-        .Introduction{
-          width: 50%;
-          height: 500px;
-          float: left;
-        }
-        .expect{
-          
-          width: 50%;
-          height: 500px;
-          float: right;
-        }
-        .quote{
-          display: table;
-          border-style: solid none;
-          width: 30%;
-          height: 180px;
-          float: right;
-        }
-        .quote>i{
-          font-size: 26px;
-          display: table-cell;
-          vertical-align: middle;
-          text-align: center;
-        }
-        .progress{
-          width: 50%;
-          height: 30px;
-          float: left;
-        }
-        .form{
-          width: 50%;
-          height: 154px;
-          float:left;
-        }
-        .foot{
-          margin-top: 920px;
-          background-color: orange;
-          width: 100%;
-          height: 20px;
-          text-align: center;
-        }
+        border: 2px solid black;
+      }
 
+      .Introduction {
+        width: 50%;
+        float: left;
+      }
+      .expect {
+        width: 40%;
+        float: right;
+      }
+      .quote {
+        display: table;
+        border-style: solid none;
+        width: 30%;
+        height: 180px;
+        float: right;
+      }
+      .quote > i {
+        font-size: 26px;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+      }
+      .progress {
+        width: 50%;
+        height: 30px;
+        float: left;
+      }
+      .form {
+        width: 50%;
+        height: 154px;
+        float: left;
+      }
+      footer {
+        background-color: orange;
+        width: 100%;
+        height: 20px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -88,93 +98,102 @@
       <h3>The record of the CSS class</h3>
     </header>
     <div class="main">
-      <div class="picbox">
-        <img class="pic"
-          width="200 px"
-          height="200 px"
-          src="pic1.jpg"
-          alt="eieiza"
-        />
+      <div class="row1">
+        <div class="profile">
+          <p>Reported by</p>
+          <p>Pitawat Chaivuutinun</p>
+          <p>Tontoei</p>
+          <p>ID 60010714</p>
+          <i>Feb 14,2020</i>
+        </div>
+        <div class="picbox">
+          <img
+            class="pic"
+            width="200 px"
+            height="200 px"
+            src="pic1.jpg"
+            alt="eieiza"
+          />
+        </div>
       </div>
-      <div class="profile">
-        <p>Reported by</p>
-        <p>Pitawat Chaivuutinun</p>
-        <p>Tontoei</p>
-        <p>ID 60010714</p>
-        <i>Feb 14,2020</i>
+      <div class="row2">
+        <div class="Introduction">
+          <h2>Introduction</h2>
+          <p>describe your background about CSS</p>
+          <ul>
+            <li>
+              <h4>do you know CSS?</h4>
+              <i>yep</i>
+            </li>
+            <li>
+              <h4>Have you ever been using CSS?</h4>
+              <i>Only once, long time ago</i>
+            </li>
+            <li>
+              <h4>Have you ever worked with CSS before?</h4>
+              <i>nope</i>
+            </li>
+            <li>
+              <h4>Have you any idea how CSS works?</h4>
+              <i>a little bit</i>
+            </li>
+            <li>
+              <h4>What are you expecting from CSS?</h4>
+              <i>Easily web editing</i>
+            </li>
+          </ul>
+        </div>
+        <div class="expect">
+          <h2>The expectation</h2>
+          <p>Describe your expectations for today's class</p>
+          <ul style="list-style: none;">
+            <li>1. Know CSS concept</li>
+            <li>2. Can use CSS well</li>
+            <li>3. Can adapt CSS with previous web</li>
+          </ul>
+        </div>
       </div>
-    </div>
-      <div class="Introduction">
-        <h2>Introduction</h2>
-        <p>describe your background about CSS</p>
-        <ul>
-          <li>
-            <h4>do you know CSS?</h4>
-            <i>yep</i>
-          </li>
-          <li>
-            <h4>Have you ever been using CSS?</h4>
-            <i>Only once, long time ago</i>
-          </li>
-          <li>
-            <h4>Have you ever worked with CSS before?</h4>
-            <i>nope</i>
-          </li>
-          <li>
-            <h4>Have you any idea how CSS works?</h4>
-            <i>a little bit</i>
-          </li>
-          <li>
-            <h4>What are you expecting from CSS?</h4>
-            <i>Easily web editing</i>
-          </li>
-        </ul>
+      <div class="row3">
+        <div class="quote"><i>รถซื้อแกง จะแรงได้ไง</i><br /><br /></div>
+        <div class="progress">
+          Progress of today's class <progress value="20" max="100"></progress
+          ><br /><br />
+        </div>
+        <div class="form">
+          register for lucky draw <br /><br />
+          <form>
+            <fieldset>
+              Name:*
+              <input
+                type="text"
+                id="name"
+                placeholder="พี่เอ้"
+                required
+              /><br />
+              email:*
+              <input
+                type="email"
+                id="email"
+                placeholder="asd@asd.com"
+                required
+              /><br />
+              Tel:
+              <input
+                type="text"
+                id="tel"
+                placeholder="0xx-xxxxxxx"
+                pattern="[0]{1}[0-9]{2}-[0-9]{7}"
+                required
+              />
+              <br />
+              <input type="submit" value="Submit" />
+            </fieldset>
+          </form>
+        </div>
       </div>
-      <div class="expect">
-        <h2>The expectation</h2>
-        <p>Describe your expectations for today's class</p>
-        <ul style="list-style: none;">
-          <li>1. Know CSS concept</li>
-          <li>2. Can use CSS well</li>
-          <li>3. Can adapt CSS with previous web</li>
-        </ul>
-      </div>
-      <div class="quote"><i>รถซื้อแกง จะแรงได้ไง</i><br /><br /></div>
-      <div class="progress">
-        Progress of today's class <progress value="20" max="100"></progress
-        ><br /><br />
-      </div>
-      <div class="form">
-        register for lucky draw <br /><br />
-        <form>
-          <fieldset>
-            Name:*
-            <input type="text" id="name" placeholder="พี่เอ้" required /><br />
-            email:*
-            <input
-              type="email"
-              id="email"
-              placeholder="asd@asd.com"
-              required
-            /><br />
-            Tel:
-            <input
-              type="text"
-              id="tel"
-              placeholder="0xx-xxxxxxx"
-              pattern="[0]{1}[0-9]{2}-[0-9]{7}"
-              required
-            />
-            <br />
-            <input type="submit" value="Submit" />
-          </fieldset>
-        </form>
-      </div>
-      <div class = "foot">
-
+      <footer>
         <p>ce.kmitl all rights reserved & copyright 2020</p>
-      </div>
+      </footer>
     </div>
-
   </body>
 </html>
