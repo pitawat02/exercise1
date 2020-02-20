@@ -27,7 +27,6 @@
             height: 200px;
             float: left;
         }
-
         .pic{
             border: 2px solid black;
             width: 196px;
@@ -80,9 +79,7 @@
             font-size: 55px;
             text-align: center;  
             vertical-align: middle;
-        }
-       
-
+        }       
     </style>
 </head>
 <body>
@@ -116,6 +113,17 @@
                     </li>
                     <li><i>afkjsnkjasbnfkabnfskinfas</i></li>
                 </ul>
+                <menu>
+                    <command type="command" label="Save" onclick="save()">Save</command>
+                </menu>
+                <hr>
+                <menu type="context" id="popup-menu">
+                    <menuitem>Action</menuitem>
+                    <menuitem>Another action</menuitem>
+                    <hr/>
+                    <menuitem>Separated action</menuitem>
+                  </menu>
+                  
             </div>
             <div class ="link">
                 <ul style="list-style: none;">
@@ -136,7 +144,7 @@
         </div>
         <div class= "row4">
             <div class="form">
-                <form>
+                <form >
                     <fieldset>
                         <legend><i>Contact Information</i></legend>
                         First name: <input type="text" id="fname" placeholder="111" required><br>
@@ -159,6 +167,25 @@
                        </fieldset>
                     <input type="submit" value="Submit" />
                 </form>
+                <details>
+                    <summary>section topic</summary>
+                    <p>section content bla bla</p>
+                </details>
+                <time datetime=“2020-02-07 19:19”> วันที่ 7 กุมภาพันธ์ 2020 เวลา 7:19 p.m.</time>
+                <p>text text text <mark>text</mark> text text text</p>
+                <meter id="disk_d" value="0.6">60%</meter>
+                <input list="browsers">
+
+                <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+                </datalist>
+                <br>
+    
+                    
             </div>
             <div class="quote">
                 <i>พรุ่งนี้วันจันทร์</i>
