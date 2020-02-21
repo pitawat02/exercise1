@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam-01 HTML</title>
+  </head>
+  <body>
+    <h1>SW Studio Today</h1>
+    <img src="pic1.jpg" width="100px" height="100px" />
+    <p>Reported by</p>
+    <p>Mr.Pitawat Chaivutinun</p>
+    <p>Tontoei</p>
+    <p>ID 60010714</p>
+    <br />
+    <p>Feb 21, 2020</p>
+    <h3>HTML Exam</h3>
+    <details>
+      <summary>Proposes</summary>
+      <ul>
+        <li>
+          Understand the nature of tags language
+        </li>
+        <li>
+          Know the standard HTML structure
+        </li>
+        <li>
+          Create a simple html document with a standard structure
+        </li>
+        <li>
+          Know HTML FORM
+        </li>
+      </ul>
+    </details>
+    <h3>Instructions</h3>
+    <ol>
+      <li>
+        Use the text editor to create the HTML document shown on the screen.
+      </li>
+      <li>
+        The created HTML document must comply with the following conditions.
+        <ul type="circle">
+          <li>
+            Good structure
+          </li>
+          <li>
+            The fields with the * of the form must be checked to ensure that it
+            is not empty
+          </li>
+          <li>
+            The textboxes must display an example of the input in the textbox.
+          </li>
+          <li>
+            Some textboxes required to check the input pattern before submitting
+          </li>
+          <li>
+            The pattern must match what the lecturer has given.
+          </li>
+        </ul>
+      </li>
+    </ol>
+    <p>Registration Form</p>
+    <form>
+      <fieldset>
+        <legend><i>Personal Informations</i></legend>
+        Name:* <input type="text" required /> Surname:*
+        <input type="text" required /><br />
+        Birthdate: <input type="date" /> Age: <input type="number" /><br />
+        Gender:*
+        <select name="gender" required>
+          <option value disabled selected hidden> Choose</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option> </select
+        ><br />
+        Have you got a sibling?*
+        <input type="radio" name="a" value="Yes" required /> Yes
+        <input type="radio" name="a" value="No" required /> No<br />
+      </fieldset>
+      <fieldset>
+        <legend><i>Address</i></legend>
+        Address1:* <input type="text" required /><br />
+        Road:* <input type="text" required /><br />
+        Distinct:* <input type="text" required /><br />
+        Province:* <input type="text" required /><br />
+        Country: <input type="text" /><br />
+        Postal code:* <input type="text" pattern="[0-9]{5}" required /><br />
+      </fieldset>
+      <fieldset>
+        <legend><i>Topics of interest</i></legend>
+        <ul>
+          <li>
+            <input type="radio" name="b" required /> Gaming <br>
+          </li>
+          <li>
+            <input type="radio" name="b" required /> Reading <br>
+          </li>
+          <li>
+            <input type="radio" name="b" required /> Traveling <br>
+          </li>
+          <li>
+            <input type="radio" name="b" required /> Hiking <br>
+          </li>
+          <li>
+            <input type="radio" name="b" required /> Sports <br>
+          </li>
+          <li>
+            <input type="radio" name="b" required /> Sleeping <br>
+          </li>
+          <li>
+            <input type="radio" name="b" required /> Others 
+            <input type="text" /><br />
+          </li>
+        </ul>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
