@@ -29,6 +29,7 @@
         }
         .pic{
             border: 2px solid black;
+            border-style: dotted dashed solid;
             width: 196px;
             height: 200px;
             float: right;
@@ -39,6 +40,7 @@
             height: 5px;
         }
         .mpic{
+            opacity: 50%;
             border-radius: 50%;
             width: 150px;
             height: 150px;
@@ -149,7 +151,7 @@
                 <form >
                     <fieldset>
                         <legend><i>Contact Information</i></legend>
-                        First name: <input type="text" id="fname" placeholder="111" required><br>
+                        First name: <input type="text" id="fname" value="007" placeholder="111" required><br>
                         Last name: <input type="text"id="lname" placeholder="222" required><br>
                         E-mail: <input type="email"id="email" placeholder="333" required><br>
                     </fieldset>
@@ -162,10 +164,10 @@
                     <fieldset>
                         <legend><i>Competition Questions</i></legend>
                         How tall is the Eiffel Tower in Paris, France?<br>
-                           <input type="radio" name="a" value="584"> 854ft<br>
-                           <input type="radio" name="a" value="784ft"> 784ft<br>
-                           <input type="radio" name="a" value="984ft"> 984ft<br>
-                           <input type="radio" name="a" value="1184"> 1184ft
+                           <input type="radio" name="a" value="584" required> 854ft<br>
+                           <input type="radio" name="a" value="784ft" required> 784ft<br>
+                           <input type="radio" name="a" value="984ft" required> 984ft<br>
+                           <input type="radio" name="a" value="1184" required> 1184ft
                        </fieldset>
                     <input type="submit" value="Submit" />
                 </form>
@@ -176,23 +178,40 @@
                 <time datetime=“2020-02-07 19:19”> วันที่ 7 กุมภาพันธ์ 2020 เวลา 7:19 p.m.</time>
                 <p>text text text <mark>text</mark> text text text</p>
                 <meter id="disk_d" value="0.6">60%</meter>
-                <input list="browsers">
-
-                <datalist id="browsers">
-                <option value="Internet Explorer">
-                <option value="Firefox">
-                <option value="Chrome">
-                <option value="Opera">
-                <option value="Safari">
-                </datalist>
+                <form action="">
+                <select name="browsers" required>
+                    <option value disabled selected hidden> Choose</option>
+                    <option value="Internet Explorer">Internet Explorer</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Chrome">Chrome</option>
+                    <option value="Opera">Opera</option>
+                    <option value="Safari">Safari</option>
+                </select>
+                <input type="submit" value="Submit" />
                 <br>
-    
+                </form>
                     
             </div>
             <div class="quote">
                 <i>พรุ่งนี้วันจันทร์</i>
             </div>
             
+        </div>
+        <div>
+            <ol reversed>
+              <li>
+                asdasdasdsasasa
+              </li>
+              <li>
+                asflas;fl,kpdlkgp;ldskgpdf,
+              </li>
+              <li>
+                  lknsdgldoknaolkmaoklsmofsakm
+              </li>
+            </ol>
+          </div>
+        <div>
+
         </div>
     </div>
 </body>
