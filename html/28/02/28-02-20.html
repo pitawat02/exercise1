@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            background-color: var(--color,brown); 
+            color: white;
+            width: 500px;
+            height: 100px;
+            font-size: 70px;
+            transition: all 1s ease 0.2s;
+        }
+        .yellow{
+            --color: yellow;
+        }
+        .red{
+            --color: red;
+        }
+        .tab{
+            width: 120px;
+            height: 50px;
+            font-size: 15px;
+            --color: blue;
+        }
+        .tab:hover{
+            transform: scaleY(100px);
+        }
+        .btn:hover{
+            --color: green;
+            color: white;
+        }
+
+        .menu{
+            width: 100%;
+            float: left;
+            list-style-type: none;
+            background-color: var(--color,honeydew);
+            
+        }
+        li{
+            float: left;
+            margin:15px
+        }
+        ul li a{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a Heading</h1>
+    <input type="button" class="btn yellow" value=b1>
+    <input type="button" class="btn red" value=b1>
+    <ul class = 'menu'>
+        <li><input type="button" class="btn tab" value=sadasd></li>
+        <li><input type="button" class="btn tab" value=sadasadgb1></li>
+        <li><input type="button" class="btn tab" value=fghgfhf></li>
+    </ul>
+</body>
+</html>

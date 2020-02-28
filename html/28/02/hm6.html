@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre&display=swap');
+        body{
+            font-family: 'Averia Serif Libre';
+            max-width: 100%;
+            background-color: rgba(164, 219, 152, 0.452);
+        }
+        header{
+            width: 100%;
+            height: 200px;
+            background-color: rgb(128, 233, 128);
+            display: table;
+
+        }
+        header > h1{
+            text-align: center;
+            font-size: 100px;
+            color: rgb(115, 142, 230);
+            display: table-cell;
+            vertical-align: middle;
+        }
+        body > h2{
+            text-align: center;
+        }
+        .row1 {
+        width: 100%;
+        height: 200px;
+        margin: 0px 0px 20px 0px;
+      }
+      .profile {
+        text-align: left;
+        float: left;
+        width: 546px;
+        font-size: large;
+      }
+      .picbox {
+
+        float: left;
+        width: 200px;
+        height: 200px;
+        margin: 0px 30px 0px 0px;
+      }
+      .pic{
+        border-radius: 50%;
+        border: 2px solid black;
+
+      }
+      .row2{
+        display: flex;
+      }
+      .left{
+          flex: 15%;
+          background-color: rgba(74, 156, 250, 0.247);
+      }
+      .left2{
+          display: flex;
+      }     
+      .right{
+          flex: 85%;
+      }
+      .temp{
+        flex: 30%;
+
+      }
+      .menu{
+          flex: 70%;
+          list-style-type: none;
+
+      }
+      .btn{
+            background-color: var(--color,rgb(67, 34, 119)); 
+            color: white;
+            width: 150px;
+            height: 50px;
+            font-size: 12px;
+            transition: all 0.5s ease 0.1s;
+            margin: 0px 10px 0px 0px;
+        }
+        .btn:hover{
+            --color: green;
+            color: white;
+        }
+        .img{
+            float: left;
+            margin: 0px 10px 0px 0px;
+        }
+
+      footer{
+            position: fixed;
+            right: 2%;
+            bottom: 10px;
+            width: 96%;
+            height: 30px;
+            display: table;
+            text-align: center;
+            background-color: rgb(54, 179, 70);
+
+        }  
+        footer > p{
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SW Studio TODAY</h1><br>
+    </header>
+    <body>
+        <h2>A little exercise of Cascading Style Sheets level3</h2>   
+        <div class="main">
+            <div class="row1">
+                <div class="picbox">
+                    <img
+                      class="pic"
+                      width="200 px"
+                      height="200 px"
+                      src="pic1.jpg"
+                      alt="eieiza"
+                    />
+                  </div>
+                <div class="profile">
+                  <p>Reported by</p>
+                  <p>Pitawat Chaivuutinun</p>
+                  <p>Tontoei</p>
+                  <p>ID 60010714</p>
+                  <i>Feb 14,2020</i>
+                </div>
+
+              </div>
+              <div class="row2">
+                  <div class="left">
+                        <h3><a id="Content">Content</a></h3>
+                        <div class="left2">
+                            <p class="temp"> </p>
+                            <ul class = 'menu'>
+                                <li><a href="#in"><input type="button" class="btn" value=Intruduction></a></li>
+                                <li> <p> </p></li>
+                                <li><a href="#ex"><input type="button" class="btn" value=Exercises></a></li>
+                                <li> <p> </p></li>
+                                <li><a href="#con"><input type="button" class="btn" value=Conclusion></a></li>
+                            </ul>
+                        </div>
+                  </div>
+                  <div class="right">
+                        <h2><a id="in">Introduction</a></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus elit ac leo varius pharetra. Fusce et commodo diam. Donec blandit condimentum neque at congue. Nam blandit sit amet lacus ac volutpat. Mauris fringilla elit eget placerat malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam pharetra massa ac eros finibus tristique. Nam consectetur lectus eget placerat semper. Cras gravida, leo nec interdum volutpat, velit justo vehicula nulla, et commodo nisi nisl quis libero.
+
+                        </p>
+                        <p>Suspendisse pharetra dui vel urna consectetur interdum eget non metus. Maecenas ornare, tortor tempus blandit ornare, odio risus venenatis enim, vel viverra metus mauris in sem. Duis imperdiet ex ac massa ultrices ullamcorper. In dignissim tellus et massa facilisis tincidunt. Donec in nibh eu felis gravida volutpat eget a libero. Duis tempor libero ipsum, et convallis lectus feugiat vitae. Mauris pharetra ex a metus pellentesque, et sodales nisl semper. Ut tincidunt accumsan tellus, nec fermentum mi imperdiet at. Ut eget ultrices augue, varius lacinia lacus.
+
+                        </p>
+                        <p>Nulla et dolor a purus maximus dictum. Donec ante libero, sollicitudin a porttitor ac, tempus vitae nisl. Suspendisse ligula risus, ullamcorper in ornare quis, sodales eu orci. Fusce tincidunt sit amet magna et fringilla. Praesent facilisis suscipit orci vel aliquet. Nullam quis hendrerit felis, eget semper magna. Nullam pharetra sollicitudin pretium. Vestibulum nibh diam, faucibus ac est ut, scelerisque tincidunt neque. Vestibulum dictum nunc a risus vulputate rutrum. Sed augue justo, cursus nec blandit eu, accumsan quis risus. Morbi euismod purus ante, et rhoncus eros porttitor eleifend. Donec et iaculis nulla. Nunc pellentesque non odio eget placerat. Sed eu ligula vitae magna laoreet posuere. Aliquam et libero neque. Praesent nec aliquam diam, id vestibulum eros.
+
+                        </p>
+                        <p style="text-align: right;"><a href="#Content">back to Contents</a></p>
+                        <h2><a id = "ex">Exercises</a></h2>
+                        <div class="excercise">
+                            
+                            <figure>
+                                <img class="img" src="dio.gif" >
+                            </figure>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quo excepturi id corrupti quos labore quibusdam expedita harum dicta velit itaque, facere iusto error? Dignissimos ad ratione odit ut reprehenderit.</p>
+                            <p>Fusce eget sagittis diam. Quisque luctus et ipsum eget varius. Mauris sit amet sem sem. Donec suscipit ligula enim, non egestas purus ultricies finibus. Curabitur vestibulum, odio ut imperdiet semper, urna libero hendrerit est, et gravida eros justo ut ante. Praesent mollis sapien a dui convallis vehicula. Phasellus imperdiet lacus mi, eget aliquet arcu tempus vitae. Etiam vel imperdiet lacus. Maecenas dapibus molestie lorem, nec vulputate risus tincidunt non. Sed tempor ligula sit amet justo eleifend tempor. Praesent tincidunt augue eu eros consequat, nec semper mauris porta. Aliquam sodales quis ex in aliquet.
+                            </p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate debitis facere ad beatae aspernatur saepe vel similique! Neque maxime laborum dignissimos quasi, adipisci, commodi iure fuga ullam ipsa minus amet!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus a, expedita qui at doloribus iste quo ab veritatis. Sed culpa sapiente quia obcaecati tempore deleniti necessitatibus quo, optio amet? Ducimus?</p>
+                            <p>
+                                Donec vehicula quis purus nec aliquet. Nunc in purus laoreet, blandit risus a, viverra nunc. Nam porttitor felis augue, et congue diam egestas sodales. Proin mattis dignissim mauris, sed condimentum mauris pellentesque id. Phasellus facilisis nunc nec metus ultrices gravida. Mauris vel pellentesque libero, nec vestibulum tellus. Nulla porttitor cursus tempus. Nulla egestas id tortor non imperdiet. Nam suscipit lectus justo.
+                            </p>
+                            <p style="text-align: right;"><a href="#Content">back to Contents</a></p>
+
+                        </div>
+                        <div class="conclu">
+                            <h2><a id = "con">Conclusion</a></h2>
+                            <p>Sed vulputate sapien neque, ut aliquam felis bibendum ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus condimentum enim nec purus hendrerit condimentum. Ut blandit ultrices enim, sit amet cursus urna tincidunt sed. Morbi in arcu volutpat, eleifend arcu vitae, eleifend nisl. Aenean elementum enim nulla, quis dictum risus ornare in. Cras quis purus sapien. Duis ac maximus erat.
+
+                            </p>
+                            <p>Nam eu nulla eget ante semper placerat. Pellentesque sodales elit eu justo suscipit, eu cursus lacus finibus. Donec dictum iaculis est ut feugiat. Nullam suscipit lectus ante, non ornare nunc blandit ut. Cras pulvinar tellus et orci sodales, vitae fermentum mi lacinia. Suspendisse et est a neque mollis facilisis. Proin rutrum consequat magna quis rhoncus. Mauris imperdiet purus vel ligula fermentum euismod. Cras pretium arcu sit amet leo tempus ultrices. Pellentesque et porttitor lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean volutpat nisl at accumsan elementum. Suspendisse convallis odio id eros venenatis ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+                            </p>
+                            <p style="text-align: right;"><a href="#Content">back to Contents</a></p><br>
+
+                        </div>
+                        
+                  </div>
+                    
+              </div>
+
+        </div>
+
+    </body>
+    <footer>
+        <p>ce.kmitl all rights reserved & copyright 2020</p>
+    </footer>
+</body>
+</html>
