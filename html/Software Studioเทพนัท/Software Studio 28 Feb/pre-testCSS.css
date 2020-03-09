@@ -1,0 +1,87 @@
+h1{
+    text-align: center;
+    background-color: orange;
+    color:cornflowerblue;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+h2{
+    color: blue;
+}
+.header{
+    text-align: center;
+}
+h3{
+    color: #555;
+}
+.img{
+    border-radius: 50%;
+}
+.profile{
+    width: 30%;
+    height: 200px;
+    margin-left: 5%;
+}
+.myProfile{
+    float: right;
+}
+.myImage{
+    float: left;
+}
+.container{
+    
+    display: flex;
+}
+.content{
+    display: block;
+    flex: 1;
+    background-color:bisque;
+    padding-left: 10px;
+}
+.paragraph{
+    display: block;
+    flex: 5;
+    background-color:cornsilk;
+    padding-left: 10px;
+}
+.back{
+    width: 100%;
+    margin-bottom: 80px;
+}
+.back_a{
+    float: right;
+}
+.exImg{
+    width: 700px;
+    height: 500px;
+    float: left;
+    margin-right: 10px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    background-color:burlywood;
+    color: aqua;
+    width: 100%;
+}
+
+ul li a{
+    text-decoration: none;
+
+}
+ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.btn{
+    padding: 10px;
+    width: 100px;
+    background-color: antiquewhite;
+    color: blue;
+    transition: background 0.3s ease 0.5s;
+}
+.btn:hover{
+    background-color: aquamarine;
+}

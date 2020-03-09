@@ -1,0 +1,17 @@
+img{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+.content{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    background-color: azure;
+    width: 580px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    opacity: 0.6;
+    color:green;
+    
+}

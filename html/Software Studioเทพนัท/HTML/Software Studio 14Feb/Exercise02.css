@@ -1,0 +1,52 @@
+body{
+    background: url(city.jpg) no-repeat center center fixed;
+}
+.header,.profile,.group1,.footer{
+    margin-bottom: 40px;
+    margin-left:20%;
+    margin-right:20%;
+}
+.topic{
+    background-color:orange;
+    color: blue;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sub-topic{
+    color: violet;
+    text-align: center;
+}
+.img{
+    border-radius: 50%;
+}
+.profile,.group1{
+    display: flex;
+}
+.col,.Introduction,.TheExpectation,.Registertheluckydraw,.extra{
+    display: block;
+    flex: 1;
+    padding-left: 20px;
+}
+.quote{
+    font-size: 40px;
+}
+.desc{
+    text-align: center;
+}
+.extra{
+    margin: auto;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.footer{
+    padding: 10px 0px 10px 0;
+    background-color: orange;
+    color: blue;
+    text-align: center;
+}
+.formreg{
+    border: 2px solid black;
+    width: 250px;
+}

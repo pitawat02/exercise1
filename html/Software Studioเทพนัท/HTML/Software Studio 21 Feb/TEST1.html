@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Software</title>
+</head>
+    
+<body>
+    <h1>SW studio Today</h1>
+    <img src="profile.jpg" width="100px" height="100px">
+    <p>
+        Reported By<br>
+        Mr.Naravith Prateepratana<br>
+        Nuth<br>
+        ID 60010509<br><br>
+        Feb 21,2020<br>
+    </p>
+    
+    <h4>HTML Exam</h4>
+    <details>
+        <summary>Proposes</summary>
+        <ul>
+            <li>Understand the nature of tags language</li>
+            <li>Know the standard HTML structure</li>
+            <li>Create a simple html document with a standard structure</li>
+            <li>Know HTML FORM</li>
+        </ul>
+    </details>
+    
+    <h4>Instructions</h4>
+    <ol>
+        <li>Use the text editor to create the HTML document shown on the screen.</li>
+        <li>The created HTML document must comply with the following conditions.</li>
+        <ul type="circle">
+            <li>Good Structure</li>
+            <li>The field with the * of the form must be checked to ensure that it is not empty</li>
+            <li>The textboxes must display an example of the input in the textbox.</li>
+            <li>Some textboxes required to check the input pattern before submitting</li>
+            <li>The pattern must match what the lecturer has given.</li>
+        </ul>
+    </ol>
+    
+    <label>Registration Form</label>
+    <form>
+        <fieldset>
+            <legend>Personal Informations</legend>
+            <label>Name:*</label><input type="text" required>
+            <label>Surname:*</label><input type="text" required><br>
+            <label>Birthdate:</label><input type="date">
+            <label>Age:</label><input type="number"><br>
+            <label>Gender:*</label>
+            <select name="gender" required>
+                <option value="" hidden>Choose</option>
+                <option value="Volvo">Male</option>
+                <option value="Volvo">Female</option>
+            </select><br>
+           
+           
+            <label>Have you got any siblings?*</label>
+
+                <input type="radio" name="sibl" required>Yes 
+                <input type="radio" name="sibl" required>No
+           
+            
+        </fieldset>
+        
+        <fieldset>
+            <legend>Address</legend>
+            <label>Address1:*</label><input type="text" required><br>
+            <label>Road:*</label><input type="text" required><br>
+            <label>District:*</label><input type="text" required><br>
+            <label>Province:*</label><input type="text" required><br>
+            <label>Country:</label><input type="text"><br>
+            <label>Postal code:*</label><input type="text" size="5" maxlength="5" placeholder="xxxxx" pattern="[0-9]{5}" required><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Topics of interest</legend>
+            <ul>
+                <li><input type="checkbox">Gaming</li>
+                <li><input type="checkbox">Reading</li>
+                <li><input type="checkbox">Travelling</li>
+                <li><input type="checkbox">Hiking</li>
+                <li><input type="checkbox">Sports</li>
+                <li><input type="checkbox">Sleeping</li>
+                <li><input type="checkbox">Others</li><input type="text" placeholder="Please specify">
+            </ul>
+        </fieldset>
+        <input type="submit" value="ส่ง">
+    </form>
+    <p>ce kmitl all rights reserved &#38; copyright 2020</p>
+</body>
+
+</html>

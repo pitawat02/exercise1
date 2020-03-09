@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> Form Tutorial </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="html_Forms.css">
+</head>
+
+<body>
+    
+    <div class="Cover">
+        <div class="first">
+            <div class="col1">
+                <p>How Many Years you held your driving license?</p>
+            </div>
+            <div class="col1">
+                <select>
+                    <option selected="selected">Year(s)</option>
+                    <option value="red"> 1 </option>
+                    <option value="yellow"> 2 </option>
+                    <option value="green"> above 3 </option>
+                </select>
+            </div>
+            <div class="col1">
+                <p>Have you had any accident in the last 4 years?</p>
+            </div>
+            <div class="col1">
+                <form>
+                    <input type="radio" name="radClass" value="Yes" >Yes
+                    <input type="radio" name="radClass" value="No" >No
+                </form>
+            </div>
+        </div>
+        
+        <div class="first">
+            <div class="col1">
+                <p>When would you like insurance to start</p>
+            </div>
+            <div class="col1">
+                <select>
+                    <option selected="selected">Year(s)</option>
+                    <option value="red"> 1 </option>
+                    <option value="yellow"> 2 </option>
+                    <option value="green"> above 3 </option>
+                </select>
+            </div>
+            <div class="col1">
+                <p>Have you been convicted of,or received a fixed penalty notice.</p>
+            </div>
+            <div class="col1">
+                <form>
+                    <input type="radio" name="radClass" value="Yes" >Yes
+                    <input type="radio" name="radClass" value="No" >No
+                </form>
+            </div>
+        </div>
+        
+        <div class="first">
+            <div class="col1">
+                <p>Number of year No claim discount earned</p>
+            </div>
+            <div class="col1">
+                <select>
+                    <option selected="selected">Year(s)</option>
+                    <option value="red"> 1 </option>
+                    <option value="yellow"> 2 </option>
+                    <option value="green"> above 3 </option>
+                </select>
+            </div>
+            <div class="col1">
+                <p>Are there any additional drivers?</p>
+            </div>
+            <div class="col1">
+                <form>
+                    <input type="radio" name="radClass" value="Yes" >Yes
+                    <input type="radio" name="radClass" value="No" >No
+                </form>
+            </div>
+        </div>
+        
+        <div class="first">
+            <div class="col1">
+                <p>How Many Years you held your driving license?</p>
+            </div>
+            <div class="col1">
+                <select>
+                    <option selected="selected">Year(s)</option>
+                    <option value="red"> 1 </option>
+                    <option value="yellow"> 2 </option>
+                    <option value="green"> above 3 </option>
+                </select>
+            </div>
+            <div class="col1"></div>
+            <div class="col1"></div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <form action="http://www.example.org/search.aspx" method ="get">
+        <h3> Search the site </h3>
+        <input type="text" name="texSearchItem">
+        <input type="submit" value="Search">
+    </form>
+    <br><br>
+    
+    <form action="http://www.example.org/feedback.aspx" method ="post">
+        <textarea name="txtFeedback" rows="10" cols="50">
+            Enter your feedback here
+        </textarea>
+        <br>
+        <input type="submit" value="Submit" >
+    </form>
+    <br><br>
+    
+    <form action="http://www.example.org/login.aspx" method ="post">
+        Username:<input type="text" name="txtUsername" value="" size="20" maxlength="20"><br>
+        Password:<input type="text" name="pwdPassword" value="" size="20" maxlength="20" ><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    
+    <!--  
+    <input type="image" src="submit.jpg" alt="submit name="btnImage" >
+    -->
+    
+    <button type="reset"> Clear this form, I want to start again </button>
+    <br><br>
+    
+    <form action="http://www.example.org/cv.aspx" method ="get" name="frmCV">
+        <input type="checkbox" name="chkSkills" value="html">HTML <br>
+        <input type="checkbox" name="chkSkills" value="css">CSS <br>
+        <input type="checkbox" name="chkSkills" value="javascript">JavaScript <br>
+        <input type="checkbox" name="chkSkills" value="php">PHP <br>
+        <input type="checkbox" name="chkAcceptTerms"  checked="checked">Accept Terms and Privacy<br>
+    </form>
+    <br><br>
+    
+    <form action="http://www.example.org/flights.aspx" method ="get">
+        <input type="radio" name="radClass" value="First" > First Class <br>
+        <input type="radio" name="radClass" value="Business" >Business <br>
+        <input type="radio" name="radClass" value="Economy" > Economy <br>
+    </form>
+    <br><br>
+    
+    <select size="5" name="SetColor">
+        <option selected="selected" value=""> Select Color </option>
+        <optgroup label="01">
+            <option value="red"> Red </option>
+            <option value="yellow"> Yellow </option>
+            <option value="green"> Green </option>
+        </optgroup>
+        
+        <optgroup label="02">
+            <option value="red"> Red </option>
+            <option value="yellow"> Yellow </option>
+            <option value="green"> Green </option>
+        </optgroup>
+        
+        <optgroup label="03">
+            <option value="green"> Green </option>
+            <option value="red"> Red </option>
+            <option value="yellow"> Yellow </option>
+        </optgroup>
+    </select>
+    <br><br><br><br><br><br>
+    
+    <form action="http://www.example.org/imageUpload.aspx" method ="post" name="fromImageUpload" enctype="multipart/form-data">
+        <input type="file" name="fileupload" accept="image/*">
+        <br><br> 
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    
+    <form action="http://www.example.org/vote.aspx" method ="get" name="fromVote">
+        <input type="hidden" name="hidPageSentFrom" value="home page">
+        <input type="submit" value="Click if this is your favorite page of our site.">
+    </form> 
+    
+</body>
+    
+</html>

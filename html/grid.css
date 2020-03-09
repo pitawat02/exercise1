@@ -1,0 +1,23 @@
+.container{
+    display: grid;
+    grid: 'l' 'c' 'r';
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.container2{
+    display: grid;
+    grid: 'l c' 'r r';
+}
+
+.l-side{
+    grid-area: l;
+}
+
+.r-side{
+    grid-area: r;
+}
+
+.center{
+    grid-area: c;
+}
