@@ -58,7 +58,7 @@ score1 = model_selection.cross_val_score(svr_lin,X_train,np.ravel(y_train),cv=kf
 score2 = model_selection.cross_val_score(svr_rbf,X_train,np.ravel(y_train),cv=kf)
 score3 = model_selection.cross_val_score(svr_poly,X_train,np.ravel(y_train),cv=kf)
 
-print(score0.std())
+print(score0)
 print(score1)
 print(score2)
 print(score3)
