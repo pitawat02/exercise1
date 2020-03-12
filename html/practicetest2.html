@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --fcolor: orange;
+        }
+        body{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            max-width: 100%;
+        }
+        .column{
+            columns: 100px 5;
+            column-gap: 50px;
+        }
+        .flexr{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .flexr .fr1{
+            flex: 80%;
+            margin: 0px 50px 0px 0px;
+        }
+        .flexr .fr2{
+            flex: 10%;
+        }
+        .flexr .fr3{
+            flex: 10%;
+        }
+        .flexc{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content:center;
+        }
+        .flexc .fc1{
+            width: 80%;
+            
+        }
+        .flexc .fc2{
+            width: 30%;
+        }
+        .flexc .fc3{
+            width: 10%;
+        }
+
+        .img{
+            position: relative;
+            bottom: 99px;
+            float: left;
+            margin: 0px 20px 0px 10px;
+        }
+        .img2{
+            position: fixed;
+            bottom: 10px;
+            right: 2px;
+            bottom: 99px;
+            float: left;
+            margin: 0px 20px 0px 10px;
+            width: 200px;
+            border: solid black;
+            border-radius: 20%;
+        }
+        .temp{
+        flex: 30%;
+
+      }
+      .menu{
+          flex: 70%;
+          list-style-type: none;    
+      }
+      .menu li{
+        float: left;
+      }
+      .btn{
+            background-color: var(--color,rgb(67, 34, 119)); 
+            color: white;
+            width: 150px;
+            height: 50px;
+            font-size: 12px;
+            transition: all 0.5s ease 0.1s;
+            margin: 0px 10px 0px 0px;
+        }
+        .btn:hover{
+            --color: green;
+            color: white;
+        }
+        
+        
+        
+        footer{
+            
+            text-align: center;
+            position: fixed;
+            height: 40px;
+            bottom: 2px;
+            right: 5%;
+            width: 90%;
+            background-color: var(--fcolor);
+            transition:all 0.5s ease 0.5s;
+            color: black;
+            
+        }
+
+        footer:hover{
+            --fcolor: blue;
+            color: white;
+            height: 50px;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>    
+        <p style="text-align: right;"><a href="#Content">back to Contents</a></p>
+    </header>
+
+    <div class="column">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper a lacus vestibulum sed arcu. Aliquet eget sit amet tellus cras adipiscing. Amet aliquam id diam maecenas ultricies mi eget. Bibendum ut tristique et egestas quis ipsum. Bibendum arcu vitae elementum curabitur vitae. Integer quis auctor elit sed vulputate mi sit amet. Elementum nibh tellus molestie nunc non blandit massa enim. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Eget magna fermentum iaculis eu non diam phasellus. Duis convallis convallis tellus id interdum. Non consectetur a erat nam at. Eget aliquet nibh praesent tristique magna. At erat pellentesque adipiscing commodo elit at imperdiet. Nunc faucibus a pellentesque sit amet porttitor eget dolor morbi. Habitant morbi tristique senectus et netus et malesuada fames ac. Faucibus ornare suspendisse sed nisi lacus sed viverra.
+        </div>
+        <div>
+            asdadsasd
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper a lacus vestibulum sed arcu. Aliquet eget sit amet tellus cras adipiscing. Amet aliquam id diam maecenas ultricies mi eget. Bibendum ut tristique et egestas quis ipsum. Bibendum arcu vitae elementum curabitur vitae. Integer quis auctor elit sed vulputate mi sit amet. Elementum nibh tellus molestie nunc non blandit massa enim. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Eget magna fermentum iaculis eu non diam phasellus. Duis convallis convallis tellus id interdum. Non consectetur a erat nam at. Eget aliquet nibh praesent tristique magna. At erat pellentesque adipiscing commodo elit at imperdiet. Nunc faucibus a pellentesque sit amet porttitor eget dolor morbi. Habitant morbi tristique senectus et netus et malesuada fames ac. Faucibus ornare suspendisse sed nisi lacus sed viverra.
+        </div>
+    </div>
+    <BR>
+    </BR>
+    <div class="flexr">
+        <div class="fr1">
+            Sociis natoque penatibus et magnis dis parturient montes nascetur. Mattis pellentesque id nibh tortor id aliquet. Parturient montes nascetur ridiculus mus mauris. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Turpis egestas pretium aenean pharetra magna. Enim sit amet venenatis urna. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Aliquam ultrices sagittis orci a scelerisque. Duis ultricies lacus sed turpis tincidunt id. Mi proin sed libero enim sed faucibus turpis in.
+        </div>
+        <div class="fr2">
+            Massa placerat duis ultricies lacus sed turpis tincidunt id. Pellentesque habitant morbi tristique senectus et. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Maecenas volutpat blandit aliquam etiam. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Maecenas ultricies mi eget mauris pharetra. Amet tellus cras adipiscing enim eu turpis egestas pretium. Vitae et leo duis ut diam quam. Ac ut consequat semper viverra. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Aliquam nulla facilisi cras fermentum odio eu feugiat. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Tempor orci eu lobortis elementum nibh tellus molestie.
+        </div>
+        <div class="fr3">
+            a;sf;asf;dsmgjlkjasdmfglkdnfgkjdnfgkbnfgkjbsfkjgbfkjsgbfkjbgdkjbkdjfgkdfjgkjdfgkdjfn
+        </div>
+    </div>
+    <BR></BR>
+    <div class="flexc">
+        <div class="fc1">
+            Sociis natoque penatibus et magnis dis parturient montes nascetur. Mattis pellentesque id nibh tortor id aliquet. Parturient montes nascetur ridiculus mus mauris. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Turpis egestas pretium aenean pharetra magna. Enim sit amet venenatis urna. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Aliquam ultrices sagittis orci a scelerisque. Duis ultricies lacus sed turpis tincidunt id. Mi proin sed libero enim sed faucibus turpis in.
+        </div>
+        <div class="fc2">
+            Massa placerat duis ultricies lacus sed turpis tincidunt id. Pellentesque habitant morbi tristique senectus et. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Maecenas volutpat blandit aliquam etiam. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Maecenas ultricies mi eget mauris pharetra. Amet tellus cras adipiscing enim eu turpis egestas pretium. Vitae et leo duis ut diam quam. Ac ut consequat semper viverra. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Aliquam nulla facilisi cras fermentum odio eu feugiat. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Tempor orci eu lobortis elementum nibh tellus molestie.
+        </div>
+        <div class="fc3">
+            Massa id neque aliquam vestibulum morbi blandit cursus. Velit aliquet sagittis id consectetur 
+        </div>
+
+
+    </div>
+    <div class="pic">
+        <img class="img" src="head.jpg" alt="">
+        <p>Sociis natoque penatibus et magnis dis parturient montes nascetur. Mattis pellentesque id nibh tortor id aliquet. Parturient montes nascetur ridiculus mus mauris. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Turpis egestas pretium aenean pharetra magna. Enim sit amet venenatis urna. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Aliquam ultrices sagittis orci a scelerisque. Duis ultricies lacus sed turpis tincidunt id. Mi proin sed libero enim sed faucibus turpis in.</p>
+    </div>
+    <div class="pic2">
+        <img class="img2" src="head.jpg" alt="">
+        <p>Sociis natoque penatibus et magnis dis parturient montes nascetur. Mattis pellentesque id nibh tortor id aliquet. Parturient montes nascetur ridiculus mus mauris. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Turpis egestas pretium aenean pharetra magna. Enim sit amet venenatis urna. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Aliquam ultrices sagittis orci a scelerisque. Duis ultricies lacus sed turpis tincidunt id. Mi proin sed libero enim sed faucibus turpis in.</p>
+    </div>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+
+    <div class="left">
+        <h3><a id="Content">Content</a></h3>
+        <div class="left2">
+            <p class="temp"> </p>
+            <ul class = 'menu'>
+                <li><a href="#in"><input type="button" class="btn" value=Intruduction></a></li>
+                <li> <p> </p></li>
+                <li><a href="#se1"><input type="button" class="btn" value='Section #1'></a></li>
+                <li> <p> </p></li>
+                <li><a href="#se2"><input type="button" class="btn" value='Section #2'></a></li>
+                <li> <p> </p></li>
+                <li><a href="#se3"><input type="button" class="btn" value='Section #3'></a></li>
+                <li> <p> </p></li>
+                <li><a href="#con"><input type="button" class="btn" value=Conclusion></a></li>
+
+            </ul>
+        </div>
+        <BR></BR>
+
+    </div>
+    <h3><a id="in">Intruduction</a></h3>
+    <h3><a id="se1">Section #1</a></h3>
+    <h3><a id="se2">Section #2</a></h3>
+    <h3><a id="se3">Section #3</a></h3>
+    <h3><a id="con">Conclusion</a></h3>
+    <p style="text-align: right;"><a href="#Content">back to Contents</a></p>
+    <BR></BR>
+    
+
+    <footer>
+        <div>
+           
+            <pre> ce kmitl asjdhkajsdhkajhsdlkhasljasdlkjasdkljasdkl</pre>
+        </div>
+    </footer>
+
+</body>
+</html>
