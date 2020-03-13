@@ -6,7 +6,7 @@
     <title>Document</title>
 
     <style>
-      @media screen and (min-width: 480px) {
+     @media screen and (min-width: 601px) {
         @import url("https://fonts.googleapis.com/css?family=Averia+Serif+Libre&display=swap");
         body {
           font-family: "Averia Serif Libre";
@@ -37,7 +37,6 @@
         .profile {
           text-align: left;
           float: left;
-          width: 546px;
           font-size: large;
         }
         .picbox {
@@ -103,6 +102,105 @@
           vertical-align: middle;
           text-align: center;
         }
+        a{
+            text-decoration: none;
+        }
+     }
+      @media screen and (max-width: 600px) {
+        @import url("https://fonts.googleapis.com/css?family=Averia+Serif+Libre&display=swap");
+        body {
+          font-family:fantasy;
+          max-width: 100%;
+          background-color: rgba(106, 42, 189, 0.452);
+        }
+        header {
+          width: 100%;
+          height: 200px;
+          background-color: rgb(128, 233, 128);
+          display: table;
+        }
+        header > h1 {
+          text-align: center;
+          font-size: 100px;
+          color: rgb(115, 142, 230);
+          display: table-cell;
+          vertical-align: middle;
+        }
+        body > h2 {
+          text-align: center;
+        }
+        .row1 {
+          width: 100%;
+          height: 200px;
+          margin: 0px 0px 20px 0px;
+        }
+        .profile {
+          text-align: left;
+          float: left;
+          font-size: large;
+        }
+        .picbox {
+          float: left;
+          width: 200px;
+          height: 200px;
+          margin: 0px 30px 0px 0px;
+        }
+        .pic {
+          border-radius: 50%;
+          border: 2px solid black;
+        }
+
+        .left {
+          width: 100%;
+          background-color: rgba(74, 156, 250, 0.247);
+        }
+
+        .right {
+            width: 100%;
+        }
+        .left2{
+            height: 80px;
+        }
+        .menu {
+          list-style-type: none;
+          display: inline;
+        }
+        .menu li a{
+            float: left;
+        }
+        .btn {
+          background-color: var(--color, rgb(106, 190, 134));
+          color: white;
+          width: 150px;
+          height: 50px;
+          font-size: 12px;
+          transition: all 0.5s ease 0.1s;
+        }
+        .btn:hover {
+          --color: green;
+          color: white;
+        }
+        .img {
+          float: left;
+          margin: 0px 10px 0px 0px;
+        }
+
+        footer {
+          position: fixed;
+          right: 2%;
+          bottom: 10px;
+          width: 96%;
+          height: 30px;
+          display: table;
+          text-align: center;
+          background-color: rgb(54, 179, 70);
+        }
+        footer > p {
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+        }
+        
       }
     </style>
   </head>
@@ -142,14 +240,13 @@
                   <a href="#in"
                     ><input type="button" class="btn" value="Intruduction"
                   /></a>
-                </li>
-                <li><p></p></li>
+                    </li>
+
                 <li>
                   <a href="#ex"
                     ><input type="button" class="btn" value="Exercises"
                   /></a>
                 </li>
-                <li><p></p></li>
                 <li>
                   <a href="#con"
                     ><input type="button" class="btn" value="Conclusion"
@@ -197,7 +294,7 @@
               eros.
             </p>
             <p style="text-align: right;">
-              <a href="#Content">back to Contents</a>
+              <a href="#Content" > back to Contents</a>
             </p>
             <h2><a id="ex">Exercises</a></h2>
             <div class="excercise">
