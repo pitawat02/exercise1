@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulating Adjacent DOM</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        p{border:1px solid #999;padding: 1rem;}
+    </style>
+</head>
+<body>
+    <h1>insertAdjacentHTML(), insertAdjacentElement(), insertAdjacentText()</h1>
+    <h2>Using positions: beforebegin, afterbegin, beforeend, or afterend</h2>
+    <main>
+        <!-- we will be adding the new content here -->
+        <p id="para">       This is the paragraph.   </p>
+    </main>
+    <script>
+        let span = document.createElement('span');
+        span.textContent = 'This is a span Element.';
+        let html = '<span>HTML span in a String.</span>';
+        let txt = 'This is just some text.'
+        let p = document.querySelector('#para');
+        
+        p.insertAdjacentElement('beforebegin', span);   //moved from original location
+        p.insertAdjacentElement('afterend', span);
+        document.body.insertAdjacentElement('afterbegin', span);
+        
+        p.insertAdjacentHTML('beforebegin', html);
+        p.insertAdjacentHTML('afterend', html);
+        p.insertAdjacentText('afterbegin', txt);
+        p.insertAdjacentText('beforeend', txt);
+        
+        /*****************************************
+        let position = 'beforebegin' | 'afterbegin' | 'beforeend' | 'afterend'
+        Element.insertAdjacentHTML(position, htmlString);
+        Element.insertAdjacentElement(position, Element);
+        Element.insertAdjacentText(position, someText);
+        *****************************************/
+    </script>
+</body>
+</html>

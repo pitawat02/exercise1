@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Element ClassList Property</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        h1{
+            font-size: 3.0rem;
+            font-family: sans-serif;
+            padding: 0.5rem 2rem;
+        }
+        p, li{
+            font-size: 1.2rem;
+            font-family: sans-serif;
+            padding: 0.5rem 2rem;
+            margin: 0;
+        }
+        code{
+            color: red;
+            font-family: monospace;
+        }
+        .a{
+            color: rebeccapurple;
+            font-size: 2.0rem;
+            border: 1px solid red;
+        }
+        .b{
+            color: #bada55;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Element.classList property</h1>
+    <ul>
+        <li><code>Element.classList.add( )</code></li>
+        <li><code>Element.classList.remove( )</code></li>
+        <li><code>Element.classList.toggle( )</code></li>
+    </ul>
+    <p class="c d e f">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam sequi nam quos voluptas aspernatur eveniet reiciendis, repudiandae nesciunt nisi itaque nobis dolorum et obcaecati, voluptatem veritatis. Neque atque quasi aspernatur?</p>
+    <p>Provident quam fugit tempora quasi enim! Quas reprehenderit voluptas dolores architecto deleniti, voluptatibus quam dignissimos distinctio iure delectus quae veniam? Itaque fuga laudantium quos, voluptatem sunt excepturi quisquam nulla mollitia.</p>
+    <p>Quam expedita, eum. Distinctio itaque doloribus quis officia, quaerat illo officiis ipsa accusantium optio molestiae? Repellat sunt, fugit veniam laboriosam voluptatem cupiditate. Unde impedit, soluta! Maxime ab possimus, omnis recusandae!</p>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            let paras = document.querySelectorAll('p');
+            for(let p in paras){
+                paras[p].addEventListener('click', clicked);
+                paras[p].addEventListener('mouseover', addA);
+                paras[p].addEventListener('mouseout', removeA);
+            }
+        });
+        
+        function clicked(ev){
+            let p = ev.currentTarget;  //our paragraph that was clicked
+            p.classList.toggle("b");
+        }
+        function addA(ev){
+            let p = ev.currentTarget;  //paragraph that was moused over
+            p.classList.add("a");
+        }
+        function removeA(ev){
+            let p = ev.currentTarget; //p that was moused out of
+            p.classList.remove("a");
+        }
+    </script>
+</body>
+</html>

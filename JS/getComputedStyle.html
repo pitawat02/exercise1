@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessing Computed Styles</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width">
+    <style>
+        .first{
+            font-size: 0.7rem;
+            font-family: sans-serif;
+        }
+        .second{
+            font-family: monospace;
+            font-weight: 700;
+        }
+        .second::before{
+            content: attr(data-sample) " " "\0026" " ";
+            color: red;
+            font-variant: small-caps;
+        }
+        .third{
+            color: #fff;
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Using JavaScript to Get Style Values from CSS</h1>
+    <p class="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quae officiis inventore sequi animi soluta nobis eum, deleniti, assumenda ducimus fugit. Odit delectus deleniti natus, autem repudiandae quod, eius voluptatibus!</p>
+    <p class="second" data-sample="Some text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quae officiis inventore sequi animi soluta nobis eum, deleniti, assumenda ducimus fugit. Odit delectus deleniti natus, autem repudiandae quod, eius voluptatibus!</p>
+    <p class="third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quae officiis inventore sequi animi soluta nobis eum, deleniti, assumenda ducimus fugit. Odit delectus deleniti natus, autem repudiandae quod, eius voluptatibus!</p>
+    
+    <div id="output"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            let first = document.querySelector('.first');
+            let second = document.querySelector('.second');
+            let third = document.querySelector('.third');
+            
+            let resultOne = getComputedStyle(first).fontSize;
+            let resultTwo = getComputedStyle(second,'::before').content;
+            let resultThree = getComputedStyle(third).backgroundColor;
+            
+            let div = document.getElementById('output')
+            div.innerHTML = `${resultOne} ${resultTwo} ${resultThree}`;
+            
+            
+        })
+    </script>
+</body>
+</html>

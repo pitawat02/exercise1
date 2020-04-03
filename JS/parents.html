@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parent Elements</title>
+    <style>
+        html {
+            font-size: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: hsl(0, 40%, 80%);
+        }
+
+        body {
+            background-color: hsl(60, 40%, 80%);
+            padding: 1rem;
+        }
+
+        main {
+            background-color: hsl(120, 40%, 80%);
+            padding: 1rem;
+        }
+
+        p {
+            background-color: hsl(180, 40%, 80%);
+            padding: 1rem;
+            line-height: 1.6;
+        }
+
+        span {
+            padding: 0rem 1rem;
+            background-color: hsl(240, 40%, 80%);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <a href="#"><span>SPAN INSIDE ANCHOR</span></a>
+            Magni ullam architecto et. Consectetur, doloribus
+            voluptatum deleniti minima <span>THE SPAN</span> numquam dolore mollitia dolorem, rerum omnis earum maiores,
+            itaque sed enim necessitatibus ipsa!</p>
+    </main>
+    <script>
+        //walking up the DOM looking for a specific element
+        document.addEventListener('DOMContentLoaded', () => {
+            let spans = document.querySelectorAll('span');
+            spans.forEach(span => {
+                span.addEventListener('click', findElement);
+            });
+        });
+
+        function findElement(ev) {
+            ev.preventDefault(); //to stop the link navigating
+            let toFind = 'div'; // name of the tag we want to find.
+            //this could also be a reference to another element
+            //could be an id
+            //could be a className
+
+            let currentElement = ev.target;
+            while (toFind !== currentElement.tagName.toLowerCase() &&
+                currentElement.tagName.toLowerCase() !== 'html') {
+                console.log('NOT', currentElement.tagName);
+                currentElement = currentElement.parentElement;
+            }
+            console.log('STOPPED AT ', currentElement)
+        }
+    </script>
+</body>
+
+</html>
